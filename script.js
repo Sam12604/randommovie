@@ -33,7 +33,7 @@ async function getData() {
 		document.getElementById("plot_html").textContent = tagline;
 		document.getElementById("runtime_html").textContent = "🕒 " + runtime + " minutes";
 		document.getElementById("rating_html").textContent = "⭐ " + vote_average + "/10";
-		document.getElementById("release_html").textContent = "📅 " + release_date;
+		document.getElementById("release_html").textContent = "📅 " + release_date.substring(0,4);
 		//document.getElementById("age_rating_html").attributes[1].textContent = "img/" + Rated.toLowerCase() + ".png";
 		document.getElementById("img_url_html").attributes[1].textContent = 'http://image.tmdb.org/t/p/original' + poster_path;
 	}
