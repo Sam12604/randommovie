@@ -1,0 +1,81 @@
+.img_style{
+  box-shadow: 4px 10px 20px rgba(0,0,0,0.50);
+  border-radius: 15px;
+}
+
+.menu{
+	box-sizing: border-box;
+	background-color:#e5e5e5;
+	box-shadow: 4px 10px 30px rgba(0,0,0,0.70);
+	border-radius:25px;
+	margin: auto;
+	width: 40%;
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+	padding: 5px;
+	display:block;
+}
+
+.large_container{
+  margin: 0;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#content{
+  padding-right: 20px;
+  padding-left: 30px;
+}
+
+@media only screen and (max-width:1000px){
+	.menu{
+		width: 95%;
+	}		
+}
+
+.menu {
+animation: fadeIn ease 1s;
+-webkit-animation: fadeIn ease 1.5s;
+-moz-animation: fadeIn ease 1.5s;
+-o-animation: fadeIn ease 1.5s;
+-ms-animation: fadeIn ease 1.5s;
+}
+@keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+.footer {
+  box-sizing: border-box;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  padding: 5px;
+  display:block;
+}
+
+
