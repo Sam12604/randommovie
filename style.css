@@ -7,6 +7,11 @@
   box-shadow: 4px 10px 20px rgba(0,0,0,0.50);
 }
 
+.logo{
+  width: 50%;
+  margin-top: 10px;
+}
+
 .menu{
 	box-sizing: border-box;
 	background-color:#e5e5e5;
@@ -37,7 +42,10 @@
 @media only screen and (max-width:1000px){
 	.menu{
 		width: 95%;
-	}		
+	}
+  .logo{
+    width: 80%
+  }
 }
 
 .menu {
