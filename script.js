@@ -4,7 +4,7 @@ var id
 var keyword
 
 async function getData() {
-	response1 = await fetch('https://sam12604.github.io/randommovie/keywords.json');
+	response1 = await fetch('https://randommoive.samharris.xyz/keywords.json');
 	api_data1 = await response1.json()
 
 	random_num = getRandomInt(0,api_data1.length-1)
