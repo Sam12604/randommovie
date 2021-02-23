@@ -27,7 +27,7 @@ async function getData() {
 
 		console.log(api_data)
 
-		const {poster_path, original_title, tagline, release_date, runtime, vote_average} = api_data;
+		const {poster_path, original_title, tagline, release_date, runtime, vote_average, homepage} = api_data;
 
 		document.getElementById("title_html").textContent = original_title;
 		document.getElementById("plot_html").textContent = tagline;
@@ -36,6 +36,7 @@ async function getData() {
 		document.getElementById("release_html").textContent = "📅 " + release_date.substring(0,4);
 		//document.getElementById("age_rating_html").attributes[1].textContent = "img/" + Rated.toLowerCase() + ".png";
 		document.getElementById("img_url_html").attributes[1].textContent = 'http://image.tmdb.org/t/p/original' + poster_path;
+		document.getElementById("homepage").attributes[1].textContent = homepage;
 	}
 }
 
