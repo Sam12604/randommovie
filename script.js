@@ -11,7 +11,7 @@ async function getData() {
 	keyword = api_data1[random_num].id
 
 
-	response = await fetch('https://api.themoviedb.org/3/discover/movie?vote_count.gte=900&with_keywords=' + keyword + '&api_key=8c3bccbc2733907ba7cfeddb6e80ee5e');
+	response = await fetch('https://api.themoviedb.org/3/discover/movie?vote_count.gte=1500&with_keywords=' + keyword + '&api_key=8c3bccbc2733907ba7cfeddb6e80ee5e');
 	api_data = await response.json()
 
 	if (api_data.total_results == 0) {
